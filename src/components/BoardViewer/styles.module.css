@@ -1,0 +1,42 @@
+.viewer {
+  margin: 1.5rem 0;
+}
+
+.canvas {
+  position: relative;
+  width: 100%;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 12px;
+  overflow: hidden;
+  background: var(--ifm-background-surface-color);
+  cursor: grab;
+  touch-action: none;
+}
+
+.canvas:active {
+  cursor: grabbing;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 1rem;
+  color: var(--ifm-color-emphasis-600);
+  font-size: 0.9rem;
+  pointer-events: none;
+}
+
+.overlay[data-status='error'] {
+  color: var(--ifm-color-danger);
+}
+
+.caption {
+  text-align: center;
+  font-size: 0.85rem;
+  color: var(--ifm-color-emphasis-600);
+  margin-top: 0.5rem;
+}

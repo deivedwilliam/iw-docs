@@ -1,0 +1,139 @@
+iW - ST Starter Kit!
+
+Equipada com STM32F030F4P6, esta devkit é um verdadeiro arsenal para explorar o potencial do STM32. Com SPI, I2C, ADC, TIMERS e muito mais, é a ferramenta ideal para quem busca mergulhar no universo STM32. E o melhor? Programação via conector USB tipo C, simplificando ainda mais o processo!
+
+Principais caracteristicas
+Core: Arm® 32-bit Cortex®-M0 CPU, frequency up to 48 MHz
+16 Kbytes of Flash memory – 4 Kbytes of SRAM with HW parity
+One 12-bit, 1.0 µs ADC (up to 9 channels) – Conversion range: 0 to 3.6 V – Separate analog supply: 2.4 V to 3.6 V
+Calendar RTC with alarm and periodic wakeup from Stop/Standby
+5 Timers
+PWM, Output-compare, and Input capture
+SPI (18 Mbit/s) with 4 to 16 programmable bit framesI
+I2C interface – Fast Mode Plus (1 Mbit/s) support on one or two I/Fs, with 20 mA current sink – SMBus/PMBus support (on single I/F)
+
+
+iW - Scott DevKit
+
+Está desenvolvendo algo para computação em borda?
+Conheça a DevKit iW-Scott! Inspirada no nosso adorável companheiro de quatro patas — Scott, um Shorkie cheio de energia —, essa placa é compacta, poderosa e sempre pronta para a ação.
+
+Com a iW-Scott, você pode transformar suas ideias em realidade e levar seus projetos IoT a um novo patamar.
+
+ 
+⚡ Principais características da iW-Scott
+🐾 ESP32-C3 (Wi-Fi + Bluetooth 5 LE @160 MHz)
+🐾 8 MB ou 16 MB de flash para firmware e dados (dependendo da versão)
+🐾 Acelerômetro LIS3DH para detecção de movimentos e orientação espacial
+🐾 Porta USB Type-C para programação e energia
+🐾 LED RGB integrado para feedback visual e efeitos
+🐾 PMIC PT1502 para gerenciamento eficiente de energia com suporte a bateria
+🐾 Conector U.FL para antena externa, garantindo ótima recepção
+🐾 Diversos GPIOs para expansão e periféricos
+
+💻 Compatibilidade
+✅ Arduino IDE
+✅ ESP-IDF
+✅ MicroPython
+✅ PlatformIO
+
+ 
+
+Ideal para IoT, automação residencial, wearables e computação em borda.
+🚀 Leve a iW-Scott para o seu próximo projeto e descubra até onde sua criatividade pode chegar!
+
+
+iW-ESPMI-IND
+
+A Placa de Desenvolvimento iW-ESPMI-IND é a solução ideal para quem busca alta performance em projetos industriais e de automação avançada. Com tecnologia de ponta baseada no poderoso ESP32-S3, esta placa oferece recursos robustos que atendem às demandas mais exigentes do mercado.
+
+Principais características da iW-ESPMI-IND
+ESP32-S3 com alta capacidade de processamento para aplicações IoT e computação embarcada.
+16MB de memória Flash para armazenamento amplo de firmware e dados.
+8MB de Octal PSRAM, garantindo maior velocidade e eficiência no processamento.
+Saída de vídeo HDMI, possibilitando aplicações com interface visual direta e de alta qualidade.
+Comunicação RS485 nativa, perfeita para integração com protocolos industriais como o Modbus.
+Slot para cartão SD, ampliando a capacidade de armazenamento e flexibilidade para gravação de dados.
+Alimentação ampla, suportando até 36V, ideal para ambientes industriais com variações de tensão.
+Por que escolher a iW-ESPMI-IND?
+Esta placa oferece uma combinação única de memória extensa, comunicação industrial e recursos multimídia, facilitando o desenvolvimento de soluções inteligentes para automação, monitoramento e controle remoto. Seu suporte ao protocolo Modbus via RS485 torna a integração com sistemas já existentes simples e eficiente.
+
+Compatibilidade e uso
+Compatível com as principais plataformas de desenvolvimento, como Arduino IDE e ESP-IDF, a iW-ESPMI-IND permite que engenheiros e desenvolvedores criem projetos robustos e escaláveis com facilidade.
+
+Invista em tecnologia avançada para seus projetos com a Placa de Desenvolvimento iW-ESPMI-IND e leve suas soluções ao próximo nível em desempenho e confiabilidade.
+
+
+iW-DigitalAmplifier
+
+A iW-DigitalAmplifier é uma breakout board projetada para quem busca alta qualidade sonora em projetos de áudio digital. Com o poderoso CI TAS5805, este amplificador classe D entrega 23W em stereo com alta eficiência e baixíssima dissipação térmica, ideal para aplicações que exigem som cristalino e economia de energia.
+
+Principais Características
+Amplificador stereo classe D com potência de 23W por canal
+Entrada digital via I2S ou TDM, garantindo compatibilidade com diversas plataformas digitais
+Baixa dissipação térmica, aumentando a vida útil dos componentes
+Fácil integração em protótipos e projetos de áudio avançados
+Formato compacto para facilitar o desenvolvimento
+Aplicações Ideais
+A iW-DigitalAmplifier é perfeita para projetos que demandam áudio de alta qualidade, tais como:
+
+Wireless Speaker (Caixa de som sem fio)
+Smart Speaker com Assistente de Voz
+Dispositivos IoT com reprodução sonora
+Projetos DIY de áudio digital
+Por que escolher a iW-DigitalAmplifier?
+Se você está desenvolvendo um produto que precisa de um amplificador estéreo digital eficiente e compacto, essa placa é a solução ideal. A combinação do CI TAS5805 com entradas digitais modernas permite prototipagem rápida, com som de alta fidelidade e baixo consumo energético.
+
+Invista em tecnologia de ponta para áudio digital e leve seu projeto para o próximo nível com a iW-DigitalAmplifier!
+
+Garanta já a sua e transforme suas ideias em soluções sonoras inovadoras!
+
+iW-CORE-BOARD
+
+A iW-CORE-BOARD V1 foi desenvolvida para que engenheiros e desenvolvedores iniciem diretamente na aplicação final.
+
+Com uma arquitetura modular baseada no STM32H7 e suporte a placas de aplicação (IW-APPLICATION), você transforma ideias em produtos reais em horas — não semanas.
+
+Ideal para desenvolvimento de soluções industriais, IoT, interfaces HMI e sistemas embarcados de alta performance.
+
+ 
+
+💡 Por que escolher a iW-CORE-BOARD?
+Elimine etapas complexas de prototipação
+Reduza drasticamente o tempo de desenvolvimento
+Foque no seu produto, não no hardware base
+Expanda facilmente com módulos plug-and-play
+🔧 Principais Características Técnicas
+ 
+
+Processador STM32H750 com ARM Cortex-M7 rodando a 480MHz, garantindo alta performance e eficiência
+Memória externa de 32MB em XiP, permitindo execução direta de código e acesso rápido a dados
+Aceleradores gráficos DMA2D e JPEG Codec, ideais para interfaces ricas e processamento de imagens
+Display integrado de 4.3” (480x272) com touch capacitivo, perfeito para aplicações HMI
+Módulo Quectel WiFi + Bluetooth, oferecendo conectividade sem fio robusta
+PMIC integrado, garantindo gerenciamento eficiente de energia
+Suporte a bateria (BL-5C / JST) + RTC com CR1220, mantendo operação contínua e relógio em tempo real
+Slot para cartão SD, ampliando o armazenamento de dados
+Botão power on/off dedicado, facilitando o uso em campo
+USB-C para debug (serial) + USB FS, simplificando programação e comunicação
+Dois conectores IW-APPLICATION, permitindo expansão modular com placas de aplicação
+
+
+iW-AutomationLab
+
+iW-AutomationLab: Software Avançado para Simulação e Análise do Protocolo MODBUS
+
+Descubra o poder do iW-AutomationLab, o software ideal para profissionais que precisam simular e analisar o protocolo MODBUS de forma prática e eficiente. Seja para comunicação RTU over RS485, utilizando nosso exclusivo conversor iW-IND-RS485 (disponível na compra do software), ou para conexões TCP/IP, o iW-AutomationLab oferece recursos completos para atender suas necessidades.
+
+Principais funcionalidades do iW-AutomationLab:
+Simulação completa do protocolo MODBUS: suporte tanto para Master quanto Slave, permitindo a criação e manipulação de registros personalizados.
+Comunicação RTU over RS485 através do conversor iW-IND-RS485, garantindo integração robusta em sistemas industriais.
+Suporte a MODBUS TCP/IP, facilitando testes e análises em redes Ethernet modernas.
+Interface intuitiva e amigável, pensada para aumentar sua produtividade e minimizar erros na configuração.
+Leitura e escrita em dispositivos MODBUS reais, simulando o papel do Master para monitorar outros equipamentos ou do Slave para testes de campo.
+Por que escolher o iW-AutomationLab?
+Com o iW-AutomationLab, você ganha uma solução versátil para desenvolvimento, teste e validação de sistemas baseados em MODBUS, amplamente utilizado na automação industrial. Nosso software é ideal para engenheiros, técnicos e integradores que buscam agilidade e precisão nos seus projetos.
+
+Invista em uma ferramenta brasileira, desenvolvida para o mercado nacional, com suporte completo para os protocolos MODBUS RTU e TCP/IP, e leve seu processo de automação para o próximo nível.
+
+Garanta já o seu iW-AutomationLab e tenha o controle absoluto de suas comunicações MODBUS com a melhor tecnologia disponível no Brasil!

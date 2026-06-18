@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IW BLE Gateway</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <div class="page-shell">
+        <header class="hero">
+            <div class="hero-copy">
+                <p class="eyebrow">BLE Gateway Console</p>
+                <h1>Provisione Wi-Fi e MQTT sem recompilar o firmware</h1>
+                <p class="hero-text">
+                    Esta interface fica gravada na flash do ESP32-C3. Use-a para apontar o gateway
+                    para sua rede Wi-Fi e para o broker MQTT que vai receber os dados dos beacons.
+                </p>
+            </div>
+            <div class="hero-panel">
+                <div class="status-grid">
+                    <article class="status-card">
+                        <span class="status-label">Access Point</span>
+                        <strong id="ap-ssid">Carregando...</strong>
+                        <small id="ap-ip">192.168.4.1</small>
+                    </article>
+                    <article class="status-card">
+                        <span class="status-label">Wi-Fi STA</span>
+                        <strong id="wifi-state">Verificando...</strong>
+                        <small id="wifi-ip">-</small>
+                    </article>
+                    <article class="status-card">
+                        <span class="status-label">MQTT</span>
+                        <strong id="mqtt-state">Verificando...</strong>
+                        <small id="mqtt-error">-</small>
+                    </article>
+                </div>
+            </div>
+        </header>
+
+        <main class="content-grid">
+            <section class="panel form-panel">
+                <div class="section-heading">
+                    <p class="eyebrow">Configuracao</p>
+                    <h2>Rede e broker</h2>
+                </div>
+
+                <form id="config-form">
+                    <div class="field-grid">
+                        <label class="field">
+                            <span>SSID do Wi-Fi</span>
+                            <input id="wifi_ssid" name="wifi_ssid" type="text" maxlength="32" placeholder="MinhaRedeWiFi">
+                        </label>
+
+                        <label class="field">
+                            <span>Senha do Wi-Fi</span>
+                            <input id="wifi_password" name="wifi_password" type="password" maxlength="64" placeholder="Senha da rede">
+                        </label>
+
+                        <label class="field field-wide">
+                            <span>Broker URI</span>
+                            <input id="mqtt_uri" name="mqtt_uri" type="text" maxlength="128" placeholder="mqtt://192.168.0.10:1883">
+                        </label>
+
+                        <label class="field">
+                            <span>Usuario MQTT</span>
+                            <input id="mqtt_username" name="mqtt_username" type="text" maxlength="64" placeholder="Opcional">
+                        </label>
+
+                        <label class="field">
+                            <span>Senha MQTT</span>
+                            <input id="mqtt_password" name="mqtt_password" type="password" maxlength="64" placeholder="Opcional">
+                        </label>
+
+                        <label class="field">
+                            <span>Client ID MQTT</span>
+                            <input id="mqtt_client_id" name="mqtt_client_id" type="text" maxlength="64" placeholder="IW-Gateway-ABC123">
+                        </label>
+
+                        <label class="field field-wide">
+                            <span>Topico MQTT</span>
+                            <input id="mqtt_topic" name="mqtt_topic" type="text" maxlength="96" placeholder="iw/beacons">
+                        </label>
+                    </div>
+
+                    <div class="actions">
+                        <button id="save-button" type="submit">Salvar configuracao</button>
+                        <button id="reload-button" class="ghost" type="button">Recarregar</button>
+                    </div>
+
+                    <p id="feedback" class="feedback">Os dados atuais serao carregados automaticamente.</p>
+                </form>
+            </section>
+
+            <section class="panel info-panel">
+                <div class="section-heading">
+                    <p class="eyebrow">Provisionamento</p>
+                    <h2>Fluxo rapido</h2>
+                </div>
+
+                <ol class="steps">
+                    <li>Conecte no access point do gateway e abra este painel.</li>
+                    <li>Preencha o SSID e a senha da rede local.</li>
+                    <li>Informe a URI do broker MQTT, o client ID e o topico de publicacao.</li>
+                    <li>Salve. O gateway mantem o BLE ativo e tenta subir o Wi-Fi em paralelo.</li>
+                </ol>
+
+                <div class="tip-card">
+                    <strong>Observacao</strong>
+                    <p>
+                        O firmware permanece anunciando o painel pela rede AP do proprio gateway,
+                        entao voce continua com acesso local mesmo enquanto o STA negocia a conexao.
+                    </p>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="/app.js"></script>
+</body>
+</html>
