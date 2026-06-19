@@ -30,6 +30,8 @@ function FlagLink({locale, to, label, active, mobile}: FlagLinkProps): React.Rea
   return (
     <Link
       to={to}
+      autoAddBaseUrl={false}
+      target="_self"
       className={`${styles.flag} ${active ? styles.active : ''}`}
       title={label}
       aria-label={label}
@@ -56,7 +58,7 @@ export default function LocaleFlags({mobile}: Props): React.ReactNode {
         <FlagLink
           key={locale}
           locale={locale}
-          to={`${alternate.createUrl({locale, fullyQualified: false})}${search}${hash}`}
+          to={`pathname://${alternate.createUrl({locale, fullyQualified: false})}${search}${hash}`}
           label={localeConfigs[locale]?.label ?? locale}
           active={locale === currentLocale}
           mobile={mobile}
