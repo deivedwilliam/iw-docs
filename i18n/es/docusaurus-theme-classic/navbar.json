@@ -1,0 +1,22 @@
+{
+  "title": {
+    "message": "Indústrias William",
+    "description": "The title in the navbar"
+  },
+  "logo.alt": {
+    "message": "Indústrias William Logo",
+    "description": "The alt text of navbar logo"
+  },
+  "item.label.Documentação": {
+    "message": "Documentación",
+    "description": "Navbar item with label Documentação"
+  },
+  "item.label.Placas": {
+    "message": "Placas",
+    "description": "Navbar item with label Placas"
+  },
+  "item.label.Software": {
+    "message": "Software",
+    "description": "Navbar item with label Software"
+  }
+}

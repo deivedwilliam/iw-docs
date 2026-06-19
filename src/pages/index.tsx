@@ -6,23 +6,23 @@ import styles from './index.module.css';
 export default function Home() {
   return (
     <Layout
-      title="Industrias William Docs"
-      description="Documentacao oficial das placas, modulos e solucoes da Industrias William">
+      title="Documentação oficial da Indústrias William"
+      description="Documentação oficial das placas, módulos e soluções da Indústrias William">
       <main className={styles.main}>
         <section className={styles.hero}>
           <div className={styles.heroContent}>
-            <span className={styles.badge}>Documentacao oficial</span>
+            <span className={styles.badge}>Documentação oficial</span>
 
-            <h1>Portfolio tecnico das placas IW</h1>
+            <h1>Documentação oficial da Indústrias William</h1>
 
             <p>
-              Guias, imagens, exemplos, pinouts e referencias para desenvolver
-              com as plataformas da Industrias William.
+              Guias, imagens, exemplos, pinouts e referências para desenvolver
+              com as plataformas da Indústrias William.
             </p>
 
             <div className={styles.buttons}>
               <Link className="button button--primary button--lg" to="/docs">
-                Acessar documentacao
+                Acessar documentação
               </Link>
 
               <Link
@@ -38,31 +38,31 @@ export default function Home() {
           <div className={styles.card}>
             <h3>Devkits e placas</h3>
             <p>
-              Visao geral dos produtos, recursos principais, hardware e
+              Visão geral dos produtos, recursos principais, hardware e
               posicionamento de cada plataforma.
             </p>
           </div>
 
           <div className={styles.card}>
-            <h3>Firmware e integracao</h3>
+            <h3>Firmware e integração</h3>
             <p>
-              Orientacoes de ambiente, stacks suportadas e caminhos sugeridos
+              Orientações de ambiente, stacks suportadas e caminhos sugeridos
               para levar os projetos para a bancada.
             </p>
           </div>
 
           <div className={styles.card}>
-            <h3>Exemplos praticos</h3>
+            <h3>Exemplos práticos</h3>
             <p>
-              Casos de uso reais para acelerar prototipos, validacoes internas
-              e demonstracoes tecnicas.
+              Casos de uso reais para acelerar protótipos, validações internas
+              e demonstrações técnicas.
             </p>
           </div>
 
           <div className={styles.card}>
-            <h3>Software e expansoes</h3>
+            <h3>Software e expansões</h3>
             <p>
-              Modulos complementares e ferramentas da casa para fechar o
+              Módulos complementares e ferramentas da casa para fechar o
               ecossistema de desenvolvimento.
             </p>
           </div>

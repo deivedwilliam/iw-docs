@@ -8,11 +8,11 @@ slug: /devkits/iw-scott/downloads
 
 # Downloads
 
-Esta secao centraliza os materiais da `iW-Scott`.
+Esta seção centraliza os materiais da `iW-Scott`.
 
 ---
 
-## Materiais disponiveis agora
+## Materiais disponíveis agora
 
 - [Datasheet iW-Scott (PDF)](/datasheets/iW-Scott_Datasheet.pdf)
 - [Imagem da placa](/img/iw-scott/BOARD_VIEW.png)
@@ -22,19 +22,19 @@ Esta secao centraliza os materiais da `iW-Scott`.
 
 ## Exemplos no projeto
 
-A pasta da iW-Scott ja contem exemplos praticos (`Acc-CTRL-LED`, `JurassicGame` e `BLE-Gateware`). Consulte a pagina [Examples](/docs/devkits/iw-scott/examples) para um resumo de cada caso.
+A pasta da iW-Scott já contém exemplos práticos (`Acc-CTRL-LED`, `JurassicGame` e `BLE-Gateware`). Consulte a página [Examples](/docs/devkits/iw-scott/examples) para um resumo de cada caso.
 
 ---
 
 ## Materiais para adicionar depois
 
 - imagem de pinout dedicada
-- firmware de referencia (Arduino, ESP-IDF, MicroPython)
-- perfis de consumo por modo de operacao
-- arquivos 3D e desenho mecanico
+- firmware de referência (Arduino, ESP-IDF, MicroPython)
+- perfis de consumo por modo de operação
+- arquivos 3D e desenho mecânico
 
 ---
 
-## Observacao
+## Observação
 
-Esta pagina concentra os artefatos oficiais da iW-Scott. Novos exemplos e materiais serao centralizados aqui conforme forem consolidados.
+Esta página concentra os artefatos oficiais da iW-Scott. Novos exemplos e materiais serão centralizados aqui conforme forem consolidados.

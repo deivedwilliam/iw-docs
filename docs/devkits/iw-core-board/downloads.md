@@ -8,11 +8,11 @@ slug: /devkits/iw-core-board/downloads
 
 # Downloads
 
-Esta secao centraliza os materiais da `iW-CORE-BOARD-V1`.
+Esta seção centraliza os materiais da `iW-CORE-BOARD-V1`.
 
 ---
 
-## Materiais disponiveis agora
+## Materiais disponíveis agora
 
 - [Datasheet iW-CORE-BOARD-V1 (PDF)](/datasheets/iW-CORE-BOARD-V1_Datasheet.pdf)
 - [Imagem da placa](/img/iw-core-board/BOARD_VIEW.png)
@@ -22,14 +22,14 @@ Esta secao centraliza os materiais da `iW-CORE-BOARD-V1`.
 
 ## Materiais para adicionar depois
 
-- imagem da placa e identificacao de componentes
-- firmware de referencia e exemplos LVGL/TouchGFX
-- catalogo de shields `iW-APPLICATION`
-- arquivos 3D e desenho mecanico
-- changelog de revisoes
+- imagem da placa e identificação de componentes
+- firmware de referência e exemplos LVGL/TouchGFX
+- catálogo de shields `iW-APPLICATION`
+- arquivos 3D e desenho mecânico
+- changelog de revisões
 
 ---
 
-## Observacao
+## Observação
 
-Esta pagina funciona como ponto de consolidacao dos artefatos oficiais da core board. Conforme novas shields e materiais forem organizados, eles serao centralizados aqui.
+Esta página funciona como ponto de consolidação dos artefatos oficiais da core board. Conforme novas shields e materiais forem organizados, eles serão centralizados aqui.

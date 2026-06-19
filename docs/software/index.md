@@ -7,23 +7,23 @@ sidebar_position: 1
 
 # Software
 
-Esta secao concentra as ferramentas que completam o ecossistema da Industrias William no lado de simulacao, testes, validacao e operacao.
+Esta seção concentra as ferramentas que completam o ecossistema da Indústrias William no lado de simulação, testes, validação e operação.
 
 ---
 
-## Catalogo atual
+## Catálogo atual
 
-| Produto | Funcao | Destaque |
+| Produto | Função | Destaque |
 | --- | --- | --- |
-| [iW-AutomationLab](/docs/software/iw-automationlab) | Simulacao e analise MODBUS | Suporte a RTU over RS485 e MODBUS TCP/IP |
+| [iW-AutomationLab](/docs/software/iw-automationlab) | Simulação e análise MODBUS | Suporte a RTU over RS485 e MODBUS TCP/IP |
 
 ---
 
-## Direcao desta area
+## Direção desta área
 
-Com o tempo, esta secao pode agrupar:
+Com o tempo, esta seção pode agrupar:
 
-- softwares proprietarios
+- softwares proprietários
 - utilitarios de bancada
 - configuradores
 - simuladores e testadores de protocolo

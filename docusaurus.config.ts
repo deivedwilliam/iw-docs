@@ -3,8 +3,8 @@ import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
-  title: 'Industrias William Docs',
-  tagline: 'Documentacao tecnica das placas e solucoes IW',
+  title: 'Indústrias William Docs',
+  tagline: 'Documentação técnica das placas e soluções IW',
   favicon: 'img/favicon.ico',
 
   future: {
@@ -21,7 +21,12 @@ const config: Config = {
 
   i18n: {
     defaultLocale: 'pt-BR',
-    locales: ['pt-BR'],
+    locales: ['pt-BR', 'en', 'es'],
+    localeConfigs: {
+      'pt-BR': {label: 'Português', htmlLang: 'pt-BR', direction: 'ltr'},
+      en: {label: 'English', htmlLang: 'en', direction: 'ltr'},
+      es: {label: 'Español', htmlLang: 'es', direction: 'ltr'},
+    },
   },
 
   presets: [
@@ -55,9 +60,9 @@ const config: Config = {
       respectPrefersColorScheme: true,
     },
     navbar: {
-      title: 'Industrias William',
+      title: 'Indústrias William',
       logo: {
-        alt: 'Industrias William Logo',
+        alt: 'Indústrias William Logo',
         src: 'img/logo.png',
       },
       items: [
@@ -65,7 +70,7 @@ const config: Config = {
           type: 'docSidebar',
           sidebarId: 'tutorialSidebar',
           position: 'left',
-          label: 'Documentacao',
+          label: 'Documentação',
         },
         {
           to: '/docs/devkits',
@@ -77,16 +82,20 @@ const config: Config = {
           label: 'Software',
           position: 'left',
         },
+        {
+          type: 'custom-localeFlags',
+          position: 'right',
+        },
       ],
     },
     footer: {
       style: 'dark',
       links: [
         {
-          title: 'Documentacao',
+          title: 'Documentação',
           items: [
             {
-              label: 'Inicio',
+              label: 'Início',
               to: '/docs',
             },
             {
@@ -94,7 +103,7 @@ const config: Config = {
               to: '/docs/devkits',
             },
             {
-              label: 'Modulos e expansoes',
+              label: 'Módulos e expansões',
               to: '/docs/modules',
             },
             {
@@ -104,7 +113,7 @@ const config: Config = {
           ],
         },
       ],
-      copyright: `Copyright ${new Date().getFullYear()} Industrias William. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Indústrias William. Built with Docusaurus.`,
     },
     prism: {
       theme: prismThemes.github,

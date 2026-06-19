@@ -8,11 +8,11 @@ slug: /devkits/iw-espmi-ind/downloads
 
 # Downloads
 
-Esta secao centraliza os materiais mais uteis da `iW-ESPMI-IND`.
+Esta seção centraliza os materiais mais úteis da `iW-ESPMI-IND`.
 
 ---
 
-## Materiais disponiveis agora
+## Materiais disponíveis agora
 
 - [Datasheet iW-ESPMI-IND (PDF)](/datasheets/iW-ESPMI-IND_Datasheet.pdf)
 - [Imagem da placa](/img/iw-espmi-ind/BOARD_VIEW.png)
@@ -23,14 +23,14 @@ Esta secao centraliza os materiais mais uteis da `iW-ESPMI-IND`.
 
 ## Materiais para adicionar depois
 
-- firmware de referencia
-- esquematico em pacote dedicado
+- firmware de referência
+- esquemático em pacote dedicado
 - arquivos 3D
-- changelog de revisoes
+- changelog de revisões
 - assets para telas de exemplo
 
 ---
 
-## Observacao
+## Observação
 
-Esta pagina funciona como um ponto de consolidacao. Conforme novos artefatos forem organizados, esta sera a melhor pagina para centralizar os downloads oficiais.
+Esta página funciona como um ponto de consolidação. Conforme novos artefatos forem organizados, esta será a melhor página para centralizar os downloads oficiais.

@@ -1,14 +1,14 @@
 ---
 id: iw-automationlab-overview
 title: iW-AutomationLab
-sidebar_label: Visao geral
+sidebar_label: Visão geral
 sidebar_position: 1
 slug: /software/iw-automationlab
 ---
 
 # iW-AutomationLab
 
-O `iW-AutomationLab` e um software voltado para simulacao, analise e validacao de comunicacoes **MODBUS**. Ele foi pensado para facilitar o trabalho de engenheiros, tecnicos e integradores que precisam testar tanto redes seriais quanto conexoes Ethernet.
+O `iW-AutomationLab` é um software voltado para simulação, análise e validação de comunicações **MODBUS**. Ele foi pensado para facilitar o trabalho de engenheiros, técnicos e integradores que precisam testar tanto redes seriais quanto conexões Ethernet.
 
 ![Interface do iW-AutomationLab](/img/iw-automationlab/SOFTWARE_VIEW.webp)
 
@@ -16,8 +16,8 @@ O `iW-AutomationLab` e um software voltado para simulacao, analise e validacao d
 
 ## Destaques
 
-- simulacao completa de MODBUS
-- operacao como Master ou Slave
+- simulação completa de MODBUS
+- operação como Master ou Slave
 - suporte a RTU over RS485
 - suporte a MODBUS TCP/IP
 - leitura e escrita em dispositivos reais
@@ -27,29 +27,29 @@ O `iW-AutomationLab` e um software voltado para simulacao, analise e validacao d
 
 ## Modos de uso
 
-### Simulacao
+### Simulação
 
-- criacao de registros personalizados
-- emulacao de dispositivos para bancada
-- validacao de cenarios antes de campo
+- criação de registros personalizados
+- emulação de dispositivos para bancada
+- validação de cenários antes de campo
 
-### Analise e teste
+### Análise e teste
 
 - leitura de equipamentos reais
 - escrita de registradores
 - troubleshooting de rede e protocolo
 
-### Integracao serial
+### Integração serial
 
 - uso com o conversor `iW-IND-RS485`
-- foco em ambientes industriais e automacao
+- foco em ambientes industriais e automação
 
 ---
 
-## Publico-alvo
+## Público-alvo
 
-- engenheiros de automacao
-- tecnicos de manutencao
+- engenheiros de automação
+- técnicos de manutenção
 - integradores de sistema
 - equipes de comissionamento e bancada
 
@@ -57,4 +57,4 @@ O `iW-AutomationLab` e um software voltado para simulacao, analise e validacao d
 
 ## Valor da ferramenta
 
-O iW-AutomationLab ajuda a encurtar ciclos de teste, reduzir tentativa e erro e dar mais previsibilidade ao desenvolvimento de sistemas baseados em MODBUS. Para quem trabalha com RTU e TCP/IP no mesmo contexto, ele tambem centraliza a rotina em uma ferramenta so.
+O iW-AutomationLab ajuda a encurtar ciclos de teste, reduzir tentativa e erro e dar mais previsibilidade ao desenvolvimento de sistemas baseados em MODBUS. Para quem trabalha com RTU e TCP/IP no mesmo contexto, ele também centraliza a rotina em uma ferramenta só.

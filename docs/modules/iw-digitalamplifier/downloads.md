@@ -8,11 +8,11 @@ slug: /modules/iw-digitalamplifier/downloads
 
 # Downloads
 
-Esta secao centraliza os materiais da `iW-DigitalAmplifier`.
+Esta seção centraliza os materiais da `iW-DigitalAmplifier`.
 
 ---
 
-## Materiais disponiveis agora
+## Materiais disponíveis agora
 
 - [Datasheet iW-DigitalAmplifier (PDF)](/datasheets/iW-DigitalAmplifier_Datasheet.pdf)
 - [Imagem da placa](/img/iw-digitalamplifier/BOARD_VIEW.png)
@@ -22,13 +22,13 @@ Esta secao centraliza os materiais da `iW-DigitalAmplifier`.
 
 ## Materiais para adicionar depois
 
-- imagem da placa e identificacao de componentes
-- exemplos de integracao com ESP32 e STM32 (I2S + I2C)
+- imagem da placa e identificação de componentes
+- exemplos de integração com ESP32 e STM32 (I2S + I2C)
 - presets de DSP (EQ, DRC e AGL)
-- arquivos 3D e desenho mecanico
+- arquivos 3D e desenho mecânico
 
 ---
 
-## Observacao
+## Observação
 
-Esta pagina concentra os artefatos oficiais do modulo. Exemplos de integracao e presets de audio serao adicionados conforme forem consolidados.
+Esta página concentra os artefatos oficiais do módulo. Exemplos de integração e presets de áudio serão adicionados conforme forem consolidados.

@@ -8,7 +8,7 @@ slug: /devkits/iw-espmi-ind/examples
 
 # Examples
 
-Mesmo quando o firmware final ainda nao esta fechado, a iW-ESPMI-IND combina muito bem com alguns cenarios de validacao rapida.
+Mesmo quando o firmware final ainda não esta fechado, a iW-ESPMI-IND combina muito bem com alguns cenários de validação rápida.
 
 ---
 
@@ -16,10 +16,10 @@ Mesmo quando o firmware final ainda nao esta fechado, a iW-ESPMI-IND combina mui
 
 Monte uma interface local para:
 
-- status de maquina
-- ajuste de parametros
+- status de máquina
+- ajuste de parâmetros
 - dashboards industriais
-- telas de manutencao
+- telas de manutenção
 
 ---
 
@@ -30,7 +30,7 @@ Use o RS485 integrado para:
 - ler sensores e instrumentos
 - escrever setpoints
 - validar topologias de rede
-- montar paineis de supervisao local
+- montar painéis de supervisão local
 
 ---
 
@@ -38,19 +38,19 @@ Use o RS485 integrado para:
 
 Grave localmente:
 
-- historico de alarmes
+- histórico de alarmes
 - tendencias de processo
-- parametros de operacao
-- arquivos de configuracao
+- parâmetros de operação
+- arquivos de configuração
 
 ---
 
-## Combinacao poderosa
+## Combinação poderosa
 
-O grande diferencial desta placa e justamente a combinacao de:
+O grande diferencial desta placa é justamente a combinação de:
 
 - interface visual local
-- comunicacao industrial
+- comunicação industrial
 - armazenamento embarcado
 
-Isso reduz bastante a quantidade de hardware auxiliar na fase de prototipo.
+Isso reduz bastante a quantidade de hardware auxiliar na fase de protótipo.
