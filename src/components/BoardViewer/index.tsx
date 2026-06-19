@@ -37,6 +37,9 @@ export default function BoardViewer({
     let frameId = 0;
     let renderer: any;
     let controls: any;
+    let viewHelper: any;
+    let clock: any;
+    let onPointerUp: ((e: PointerEvent) => void) | undefined;
     let resizeObserver: ResizeObserver | undefined;
     let userInteracted = false;
 
@@ -48,6 +51,9 @@ export default function BoardViewer({
         );
         const {OrbitControls}: any = await import(
           'three/examples/jsm/controls/OrbitControls.js'
+        );
+        const {ViewHelper}: any = await import(
+          'three/examples/jsm/helpers/ViewHelper.js'
         );
         if (disposed) return;
 
@@ -69,6 +75,7 @@ export default function BoardViewer({
         if ('outputColorSpace' in renderer) {
           renderer.outputColorSpace = THREE.SRGBColorSpace;
         }
+        renderer.autoClear = false;
         container.appendChild(renderer.domElement);
 
         // Iluminacao
@@ -92,6 +99,20 @@ export default function BoardViewer({
           userInteracted = true;
           controls.autoRotate = false;
         });
+
+        // ViewHelper: gizmo de navegacao ("viewcube") oficial do three.
+        // Clique em um eixo para alinhar a camera com aquela vista.
+        clock = new THREE.Clock();
+        viewHelper = new ViewHelper(camera, renderer.domElement);
+        viewHelper.center = controls.target;
+        onPointerUp = (event: PointerEvent) => {
+          // handleClick so reage se o clique cair na regiao do gizmo
+          if (viewHelper.handleClick(event)) {
+            userInteracted = true;
+            controls.autoRotate = false;
+          }
+        };
+        renderer.domElement.addEventListener('pointerup', onPointerUp);
 
         const loader = new GLTFLoader();
         loader.load(
@@ -132,9 +153,14 @@ export default function BoardViewer({
 
         const animate = () => {
           frameId = requestAnimationFrame(animate);
-          if (!userInteracted) controls.autoRotate = autoRotate;
+          const delta = clock.getDelta();
+          if (viewHelper.animating) {
+            viewHelper.update(delta);
+          }
           controls.update();
+          renderer.clear();
           renderer.render(scene, camera);
+          viewHelper.render(renderer);
         };
         animate();
 
@@ -147,8 +173,8 @@ export default function BoardViewer({
         resizeObserver.observe(container);
       } catch (err) {
         // eslint-disable-next-line no-console
-        console.error('[BoardViewer] Three.js indisponivel', err);
-        setMessage('Three.js nao instalado. Rode: npm install three');
+        console.error('[BoardViewer] Three.js indisponível', err);
+        setMessage('Three.js não instalado. Rode: npm install three');
         setStatus('error');
       }
     })();
@@ -157,6 +183,10 @@ export default function BoardViewer({
       disposed = true;
       if (frameId) cancelAnimationFrame(frameId);
       resizeObserver?.disconnect();
+      if (onPointerUp && renderer) {
+        renderer.domElement.removeEventListener('pointerup', onPointerUp);
+      }
+      viewHelper?.dispose?.();
       controls?.dispose?.();
       if (renderer) {
         renderer.dispose?.();

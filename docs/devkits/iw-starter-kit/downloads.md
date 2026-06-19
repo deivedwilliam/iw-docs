@@ -8,11 +8,11 @@ slug: /devkits/iw-starter-kit/downloads
 
 # Downloads
 
-Esta secao centraliza os materiais da `iW-ST-StarterKit`.
+Esta seção centraliza os materiais da `iW-ST-StarterKit`.
 
 ---
 
-## Materiais disponiveis agora
+## Materiais disponíveis agora
 
 - [Datasheet iW-ST-StarterKit (PDF)](/datasheets/iW-ST-StarterKit_Datasheet.pdf)
 - [Imagem da placa](/img/iw-starter-kit/BOARD_VIEW.png)
@@ -22,13 +22,13 @@ Esta secao centraliza os materiais da `iW-ST-StarterKit`.
 
 ## Materiais para adicionar depois
 
-- imagem da placa e identificacao de componentes
+- imagem da placa e identificação de componentes
 - exemplos de firmware (blink, ADC, UART, SPI, I2C)
-- passo a passo de gravacao via SWD e bootloader serial
-- arquivos 3D e desenho mecanico
+- passo a passo de gravação via SWD e bootloader serial
+- arquivos 3D e desenho mecânico
 
 ---
 
-## Observacao
+## Observação
 
-Esta pagina concentra os artefatos oficiais da Starter Kit. Novos exemplos e guias de programacao serao adicionados conforme o material for consolidado.
+Esta página concentra os artefatos oficiais da Starter Kit. Novos exemplos e guias de programação serão adicionados conforme o material for consolidado.

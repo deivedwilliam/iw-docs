@@ -1,0 +1,58 @@
+.flags {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  margin-left: 0.5rem;
+}
+
+.flag {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.15rem 0.3rem;
+  border-radius: 6px;
+  line-height: 1;
+  text-decoration: none;
+  opacity: 0.45;
+  filter: grayscale(60%);
+  transition: opacity 0.15s ease, filter 0.15s ease, transform 0.15s ease;
+}
+
+.flag:hover {
+  opacity: 0.9;
+  filter: grayscale(0%);
+  transform: translateY(-1px);
+  text-decoration: none;
+}
+
+.flag.active {
+  opacity: 1;
+  filter: grayscale(0%);
+  box-shadow: inset 0 -2px 0 0 var(--ifm-color-primary);
+}
+
+.flagImg {
+  display: block;
+  width: 22px;
+  height: 15px;
+  border-radius: 2px;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.12);
+}
+
+/* Menu mobile: empilha com rótulo */
+.flagsMobile {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  padding: 0.25rem 0;
+}
+
+.flagsMobile .flag {
+  opacity: 1;
+  filter: none;
+  gap: 0.5rem;
+  padding: 0.4rem 0.5rem;
+}
+
+.mobileLabel {
+  font-size: 0.9rem;
+}

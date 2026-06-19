@@ -1,24 +1,24 @@
 ---
 id: modules
-title: Modulos e Expansoes
+title: Breakout Boards
 slug: /modules
 sidebar_position: 1
 ---
 
-# Modulos e Expansoes
+# Breakout Boards
 
-Nem todo projeto precisa de uma placa principal nova. Em muitos casos, um modulo especializado resolve o problema com menos risco e menos tempo de integracao.
+Nem todo projeto precisa de uma placa principal nova. Em muitos casos, um módulo especializado resolve o problema com menos risco e menos tempo de integração.
 
 ---
 
-## Catalogo atual
+## Catálogo atual
 
-| Produto | Funcao | Destaque |
+| Produto | Função | Destaque |
 | --- | --- | --- |
-| [iW-DigitalAmplifier](/docs/modules/iw-digitalamplifier) | Audio digital | Amplificador classe D com entrada I2S ou TDM |
+| [iW-DigitalAmplifier](/docs/modules/iw-digitalamplifier) | Áudio digital | Amplificador classe D com entrada I2S ou TDM |
 
 ---
 
-## Objetivo desta secao
+## Objetivo desta seção
 
-Esta area vai concentrar placas auxiliares, breakout boards e expansoes que complementam o ecossistema principal da IW.
+Esta área vai concentrar placas auxiliares, breakout boards e expansões que complementam o ecossistema principal da IW.

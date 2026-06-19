@@ -8,20 +8,20 @@ slug: /devkits/iw-scott/examples
 
 # Examples
 
-Esta placa ja possui exemplos interessantes dentro do proprio projeto. Abaixo esta um resumo dos principais casos que encontramos na pasta da `iW-Scott`.
+Esta placa já possui exemplos interessantes dentro do próprio projeto. Abaixo esta um resumo dos principais casos que encontramos na pasta da `iW-Scott`.
 
 ---
 
 ## Acc-CTRL-LED
 
-Exemplo em estilo Arduino/PlatformIO que usa o **LIS3DH** para ler aceleracao e traduzir orientacao espacial em cor e brilho do LED RGB.
+Exemplo em estilo Arduino/PlatformIO que usa o **LIS3DH** para ler aceleração e traduzir orientação espacial em cor e brilho do LED RGB.
 
 ### O que demonstra
 
-- leitura do acelerometro por I2C
+- leitura do acelerômetro por I2C
 - filtro simples para suavizar medidas
-- mapeamento de orientacao para HSV no NeoPixel
-- logica de power hold para desligamento da placa
+- mapeamento de orientação para HSV no NeoPixel
+- lógica de power hold para desligamento da placa
 
 ---
 
@@ -34,8 +34,8 @@ Exemplo mais completo que usa display, joystick BLE e LED RGB para montar um min
 - uso do display com `TFT_eSPI`
 - joystick BLE como dispositivo de entrada
 - controle de backlight
-- animacao grafica local
-- gerencia de energia e UX embarcada
+- animação gráfica local
+- gerência de energia e UX embarcada
 
 ---
 
@@ -48,14 +48,14 @@ Projeto em ESP-IDF focado em gateway BLE. O firmware faz varredura passiva, inte
 - varredura BLE com ESP-IDF
 - parse de advertisement manufacturer specific
 - fila de leituras e cache de sensores
-- integracao com runtime de publicacao
+- integração com runtime de publicação
 
 ---
 
-## Como usar esta secao
+## Como usar esta seção
 
-Se a ideia for aprender a placa rapido:
+Se a ideia for aprender a placa rápido:
 
 1. comece pelo `Acc-CTRL-LED` para validar sensor e LED
 2. avance para `JurassicGame` para explorar interface local
-3. use `BLE-Gateware` quando precisar de um caso mais proximo de produto conectado
+3. use `BLE-Gateware` quando precisar de um caso mais próximo de produto conectado

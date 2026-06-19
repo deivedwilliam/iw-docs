@@ -10,13 +10,13 @@ import BoardViewer from '@site/src/components/BoardViewer';
 
 # Hardware
 
-Esta secao detalha os aspectos fisicos e eletricos da `iW-ST-StarterKit` (Rev. RV01), a partir do datasheet do produto.
+Esta seção detalha os aspectos físicos e elétricos da `iW-ST-StarterKit` (Rev. RV01), a partir do datasheet do produto.
 
 ---
 
-## Visao geral da placa
+## Visão geral da placa
 
-A iW-ST-StarterKit e uma devkit compacta e de baixo custo construida em torno do `STM32F030F4P6` (ARM Cortex-M0 a ate 48 MHz). Ela integra tudo o que e necessario para programar e depurar sem hardware externo: USB-C, ponte USB-Serial, regulador on-board, protecao ESD e botoes dedicados.
+A iW-ST-StarterKit é uma devkit compacta e de baixo custo construída em torno do `STM32F030F4P6` (ARM Cortex-M0 a até 48 MHz). Ela integra tudo o que é necessário para programar e depurar sem hardware externo: USB-C, ponte USB-Serial, regulador on-board, proteção ESD e botões dedicados.
 
 ![Placa iW-ST Starter Kit](/img/iw-starter-kit/BOARD_VIEW.png)
 
@@ -28,104 +28,104 @@ Arraste para girar, role para dar zoom.
 
 ---
 
-## Caracteristicas principais
+## Características principais
 
-- MCU `STM32F030F4P6` (Cortex-M0, ate 48 MHz, TSSOP-20)
+- MCU `STM32F030F4P6` (Cortex-M0, até 48 MHz, TSSOP-20)
 - 16 KB de Flash + 4 KB de SRAM
-- conector USB-C com protecao ESD `USBLC6-2P6`
+- conector USB-C com proteção ESD `USBLC6-2P6`
 - ponte serial `CH343P` (USB para UART / USART1)
-- regulador LDO `AP2112K-3.3` (5 V para 3,3 V, ate 600 mA)
+- regulador LDO `AP2112K-3.3` (5 V para 3,3 V, até 600 mA)
 - cristal externo de 20 MHz (capacitores de carga 22 pF)
-- programacao por SWD (PA13/PA14) e bootloader serial via BOOT0
-- ate 15 GPIOs multifuncionais nos conectores de expansao
+- programação por SWD (PA13/PA14) e bootloader serial via BOOT0
+- até 15 GPIOs multifuncionais nos conectores de expansão
 
 ---
 
-## Especificacoes eletricas
+## Especificações elétricas
 
-| Parametro | Min. | Tip. | Max. | Unidade / Observacao |
+| Parâmetro | Mín. | Típ. | Máx. | Unidade / Observação |
 | --- | --- | --- | --- | --- |
-| Tensao de entrada USB (V_BUS) | 4,5 | 5,0 | 5,5 | V — conector USB-C |
-| Tensao logica do sistema | — | 3,3 | — | V — gerada pelo AP2112K |
-| Corrente max. do regulador | — | — | 600 | mA — AP2112K-3.3 |
-| Frequencia de clock da CPU | — | — | 48 | MHz |
-| Frequencia do cristal externo | — | 20 | — | MHz |
-| Tensao de operacao do MCU | 2,4 | 3,3 | 3,6 | V — STM32F030F4 |
-| Consumo tipico (Run, 48 MHz) | — | ~12 | — | mA |
+| Tensão de entrada USB (V_BUS) | 4,5 | 5,0 | 5,5 | V — conector USB-C |
+| Tensão lógica do sistema | — | 3,3 | — | V — gerada pelo AP2112K |
+| Corrente máx. do regulador | — | — | 600 | mA — AP2112K-3.3 |
+| Frequência de clock da CPU | — | — | 48 | MHz |
+| Frequência do cristal externo | — | 20 | — | MHz |
+| Tensão de operação do MCU | 2,4 | 3,3 | 3,6 | V — STM32F030F4 |
+| Consumo típico (Run, 48 MHz) | — | ~12 | — | mA |
 | Consumo em Stop | — | ~5 | — | uA |
-| Temperatura de operacao | -40 | — | +85 | °C |
+| Temperatura de operação | -40 | — | +85 | °C |
 
-> Os valores de consumo sao tipicos do STM32F030F4 e variam conforme firmware, clock e perifericos ativos.
+> Os valores de consumo são típicos do STM32F030F4 e variam conforme firmware, clock e periféricos ativos.
 
 ---
 
-## Gestao de energia
+## Gestão de energia
 
-A alimentacao e feita pelo USB-C (5 V). O LDO `AP2112K-3.3` converte os 5 V em 3,3 V estaveis para o MCU e perifericos. Os trilhos de 3,3 V e 5 V tambem ficam disponiveis nos conectores de expansao.
+A alimentação é feita pelo USB-C (5 V). O LDO `AP2112K-3.3` converte os 5 V em 3,3 V estáveis para o MCU e periféricos. Os trilhos de 3,3 V e 5 V também ficam disponíveis nos conectores de expansão.
 
-| Recurso | Descricao |
+| Recurso | Descrição |
 | --- | --- |
 | Entrada de energia | USB-C (5 V via V_BUS) |
-| Regulacao | LDO AP2112K-3.3 — saida 3,3 V ate 600 mA |
+| Regulação | LDO AP2112K-3.3 — saída 3,3 V até 600 mA |
 | Desacoplamento | capacitores de 100 nF / 10 uF nos trilhos de 5 V e 3,3 V |
-| Filtragem analogica | ferrite bead (600R) + 100 nF no pino VDDA do MCU |
-| Saidas disponiveis | pinos 3V3 e 5V nos conectores de expansao |
+| Filtragem analógica | ferrite bead (600R) + 100 nF no pino VDDA do MCU |
+| Saídas disponíveis | pinos 3V3 e 5V nos conectores de expansão |
 
 ---
 
-## Perifericos e interfaces
+## Periféricos e interfaces
 
 ### Ponte USB-Serial — CH343P
 
-Conversor USB para UART que liga a `USART1` do STM32 (PA9/TX e PA10/RX) diretamente ao computador via USB-C, permitindo comunicacao serial, log de depuracao e gravacao via bootloader sem adaptador externo.
+Conversor USB para UART que liga a `USART1` do STM32 (PA9/TX e PA10/RX) diretamente ao computador via USB-C, permitindo comunicação serial, log de depuração e gravação via bootloader sem adaptador externo.
 
-### Depuracao — SWD
+### Depuração — SWD
 
-Os pinos `PA13` (SWDIO) e `PA14` (SWCLK) expoem a interface Serial Wire Debug, para programacao e depuracao com ferramentas como ST-Link. Disponiveis no conector de expansao.
+Os pinos `PA13` (SWDIO) e `PA14` (SWCLK) expõem a interface Serial Wire Debug, para programação e depuração com ferramentas como ST-Link. Disponíveis no conector de expansão.
 
-### Protecao ESD — USBLC6-2P6
+### Proteção ESD — USBLC6-2P6
 
-Componente dedicado de protecao contra descargas eletrostaticas nas linhas D+/D- do USB-C.
+Componente dedicado de proteção contra descargas eletrostáticas nas linhas D+/D- do USB-C.
 
 ---
 
-## Mapa de pinos / conectores de expansao
+## Mapa de pinos / conectores de expansão
 
-A placa expoe os GPIOs do STM32F030F4P6 em dois conectores laterais. A maioria dos pinos e multifuncional (GPIO, ADC, I2C, SPI, USART, timers e PWM).
+A placa expõe os GPIOs do STM32F030F4P6 em dois conectores laterais. A maioria dos pinos é multifuncional (GPIO, ADC, I2C, SPI, USART, timers e PWM).
 
-| Pino | Sinal | Funcoes alternativas | Observacoes |
+| Pino | Sinal | Funções alternativas | Observações |
 | --- | --- | --- | --- |
-| 1 | PA0 | ADC_IN0, USART2_CTS, TIM2_CH1 | entrada analogica / wakeup |
-| 2 | PA1 | ADC_IN1, USART2_RTS, TIM2_CH2 | entrada analogica |
-| 3 | PA2 | ADC_IN2, USART2_TX, TIM2_CH3 | entrada analogica / UART |
-| 4 | PA3 | ADC_IN3, USART2_RX, TIM2_CH4 | entrada analogica / UART |
-| 5 | PA4 | ADC_IN4, SPI1_NSS | entrada analogica / SPI |
-| 6 | PA5 | ADC_IN5, SPI1_SCK | entrada analogica / SPI |
-| 7 | PA6 | ADC_IN6, SPI1_MISO, TIM3_CH1 | entrada analogica / SPI |
-| 8 | PA7 | ADC_IN7, SPI1_MOSI, TIM3_CH2 | entrada analogica / SPI |
-| 9 | PB1 | ADC_IN9, TIM3_CH4 | entrada analogica |
+| 1 | PA0 | ADC_IN0, USART2_CTS, TIM2_CH1 | entrada analógica / wakeup |
+| 2 | PA1 | ADC_IN1, USART2_RTS, TIM2_CH2 | entrada analógica |
+| 3 | PA2 | ADC_IN2, USART2_TX, TIM2_CH3 | entrada analógica / UART |
+| 4 | PA3 | ADC_IN3, USART2_RX, TIM2_CH4 | entrada analógica / UART |
+| 5 | PA4 | ADC_IN4, SPI1_NSS | entrada analógica / SPI |
+| 6 | PA5 | ADC_IN5, SPI1_SCK | entrada analógica / SPI |
+| 7 | PA6 | ADC_IN6, SPI1_MISO, TIM3_CH1 | entrada analógica / SPI |
+| 8 | PA7 | ADC_IN7, SPI1_MOSI, TIM3_CH2 | entrada analógica / SPI |
+| 9 | PB1 | ADC_IN9, TIM3_CH4 | entrada analógica |
 | 10 | PA9 | USART1_TX, I2C1_SCL | UART1 TX -> CH343P |
 | 11 | PA10 | USART1_RX, I2C1_SDA | UART1 RX -> CH343P |
-| 12 | PA13 | SWDIO | depuracao SWD |
-| 13 | PA14 | SWCLK | depuracao SWD |
-| 14 | 3V3 | — | saida regulada 3,3 V |
-| 15 | 5V | — | entrada/saida 5 V (V_BUS do USB-C) |
-| 16 | GND | — | referencia / terra |
+| 12 | PA13 | SWDIO | depuração SWD |
+| 13 | PA14 | SWCLK | depuração SWD |
+| 14 | 3V3 | — | saída regulada 3,3 V |
+| 15 | 5V | — | entrada/saída 5 V (V_BUS do USB-C) |
+| 16 | GND | — | referência / terra |
 
-> `PA13/PA14` sao, por padrao, a interface SWD — reconfigure-os como GPIO apenas se nao usar depuracao. A numeracao segue a serigrafia dos conectores laterais.
+> `PA13/PA14` são, por padrão, a interface SWD — reconfigure-os como GPIO apenas se não usar depuração. A numeração segue a serigrafia dos conectores laterais.
 
 ---
 
-## Botoes e controles
+## Botões e controles
 
-| Botao | Sinal | Funcao |
+| Botão | Sinal | Função |
 | --- | --- | --- |
 | NRST | NRST | reinicia o microcontrolador STM32F030 |
-| BOOT0 | BOOT0 | entra no bootloader do sistema (gravacao via serial) ao reiniciar |
+| BOOT0 | BOOT0 | entra no bootloader do sistema (gravação via serial) ao reiniciar |
 
 ---
 
-## Esquematico online
+## Esquemático online
 
 Visualize o projeto de hardware diretamente no navegador:
 
@@ -136,16 +136,14 @@ Visualize o projeto de hardware diretamente no navegador:
   style={{border: '1px solid #333', borderRadius: '12px'}}
 ></iframe>
 
-[Abrir no KiCanvas](https://kicanvas.org/?repo=https%3A%2F%2Fgithub.com%2FIndustriasWilliam%2FIW-ST-STARTER-KIT%2Ftree%2Fmain%2FHARDWARE)
-
 ---
 
-## Informacoes mecanicas e ambientais
+## Informações mecânicas e ambientais
 
-| Item | Especificacao |
+| Item | Especificação |
 | --- | --- |
-| Conector principal | USB-C (alimentacao + dados) |
-| Conectores de expansao | headers laterais, passo 2,54 mm |
+| Conector principal | USB-C (alimentação + dados) |
+| Conectores de expansão | headers laterais, passo 2,54 mm |
 | Microcontrolador | STM32F030F4P6 — TSSOP-20 |
-| Temperatura de operacao | -40 °C a +85 °C |
-| Tensao logica | 3,3 V |
+| Temperatura de operação | -40 °C a +85 °C |
+| Tensão lógica | 3,3 V |
