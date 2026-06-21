@@ -4,6 +4,8 @@ title: iW-AIoT-eXplorer
 sidebar_label: Visão geral
 sidebar_position: 1
 slug: /devkits/iw-aiot-explorer
+description: "iW-AIoT-eXplorer: plataforma AIoT ESP32-S3R8 com câmera OV5640, microfones PDM, display touch e LoRa/LoRaWAN para IA na borda."
+image: /img/iw-aiot-explorer/BOARD_VIEW.png
 ---
 
 # iW-AIoT-eXplorer

@@ -4,6 +4,8 @@ title: iW-Scott DevKit
 sidebar_label: Visão geral
 sidebar_position: 1
 slug: /devkits/iw-scott
+description: "iW-Scott DevKit: placa ESP32-C3 com Wi-Fi e BLE 5, acelerômetro LIS3DH, LED RGB e PMIC com bateria — para IoT, edge e wearables."
+image: /img/iw-scott/BOARD_VIEW.png
 ---
 
 # iW-Scott DevKit

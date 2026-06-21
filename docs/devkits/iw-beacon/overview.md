@@ -4,6 +4,8 @@ title: iW-Beacon
 sidebar_label: Visão geral
 sidebar_position: 1
 slug: /devkits/iw-beacon
+description: "iW-Beacon: beacon BLE nRF52832 com sensores LIS3DH e SHTC3 e timer nano-power TPL5110 para autonomia de anos em bateria."
+image: /img/iw-beacon/BOARD_VIEW.png
 ---
 
 # iW-Beacon

@@ -4,6 +4,8 @@ title: iW-ESPMI-IND
 sidebar_label: Visão geral
 sidebar_position: 1
 slug: /devkits/iw-espmi-ind
+description: "iW-ESPMI-IND: placa industrial ESP32-S3 com saída HDMI, RS485 (Modbus) e cartão SD — para IHM, dashboards e automação."
+image: /img/iw-espmi-ind/BOARD_VIEW.png
 ---
 
 # iW-ESPMI-IND

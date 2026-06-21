@@ -1,0 +1,7 @@
+# robots.txt — Indústrias William Docs
+User-agent: *
+Allow: /
+
+Sitemap: https://docs.industriaswilliam.com/sitemap.xml
+Sitemap: https://docs.industriaswilliam.com/en/sitemap.xml
+Sitemap: https://docs.industriaswilliam.com/es/sitemap.xml

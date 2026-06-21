@@ -4,6 +4,8 @@ title: iW-Scott DevKit
 sidebar_label: Overview
 sidebar_position: 1
 slug: /devkits/iw-scott
+description: "iW-Scott DevKit: ESP32-C3 board with Wi-Fi and BLE 5, an LIS3DH accelerometer, RGB LED and battery PMIC — for IoT, edge and wearables."
+image: /img/iw-scott/BOARD_VIEW.png
 ---
 
 # iW-Scott DevKit
