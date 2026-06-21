@@ -11,8 +11,9 @@ const config: Config = {
     v4: true,
   },
 
-  url: 'https://your-docusaurus-site.example.com',
+  url: 'https://docs.industriaswilliam.com',
   baseUrl: '/',
+  trailingSlash: false,
 
   organizationName: 'IndustriasWilliam',
   projectName: 'iw-docs',
@@ -56,6 +57,16 @@ const config: Config = {
 
   themeConfig: {
     image: 'img/logo.png',
+    metadata: [
+      {property: 'og:site_name', content: 'Indústrias William Docs'},
+      {property: 'og:type', content: 'website'},
+      {name: 'twitter:card', content: 'summary_large_image'},
+      {
+        name: 'keywords',
+        content:
+          'Indústrias William, ESP32, STM32, nRF52, LoRa, LoRaWAN, devkit, placa de desenvolvimento, IoT, AIoT, RS485, Modbus, datasheet',
+      },
+    ],
     colorMode: {
       respectPrefersColorScheme: true,
     },

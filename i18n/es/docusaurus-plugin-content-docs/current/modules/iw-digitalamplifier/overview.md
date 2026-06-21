@@ -4,6 +4,8 @@ title: iW-DigitalAmplifier
 sidebar_label: Visión general
 sidebar_position: 1
 slug: /modules/iw-digitalamplifier
+description: "iW-DigitalAmplifier: breakout board de audio clase D TAS5805M, 2x23 W estéreo, entrada digital I2S/TDM y DSP integrado."
+image: /img/iw-digitalamplifier/BOARD_VIEW.png
 ---
 
 # iW-DigitalAmplifier

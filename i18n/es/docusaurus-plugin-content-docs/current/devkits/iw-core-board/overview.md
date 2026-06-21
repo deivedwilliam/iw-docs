@@ -4,6 +4,8 @@ title: iW-CORE-BOARD
 sidebar_label: Visión general
 sidebar_position: 1
 slug: /devkits/iw-core-board
+description: "iW-CORE-BOARD: core board STM32H7 (Cortex-M7) con pantalla táctil de 4,3 pulgadas, Wi-Fi/BLE y expansión modular iW-APPLICATION."
+image: /img/iw-core-board/BOARD_VIEW.png
 ---
 
 # iW-CORE-BOARD

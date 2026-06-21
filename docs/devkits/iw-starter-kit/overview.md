@@ -4,6 +4,8 @@ title: iW-ST Starter Kit
 sidebar_label: Visão geral
 sidebar_position: 1
 slug: /devkits/iw-starter-kit
+description: "iW-ST Starter Kit: devkit STM32F030 (ARM Cortex-M0) com USB-C, ponte USB-Serial e GPIOs — placa de entrada para o ecossistema STM32."
+image: /img/iw-starter-kit/BOARD_VIEW.png
 ---
 
 # iW-ST Starter Kit

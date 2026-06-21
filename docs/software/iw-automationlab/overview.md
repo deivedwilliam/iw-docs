@@ -4,6 +4,7 @@ title: iW-AutomationLab
 sidebar_label: Visão geral
 sidebar_position: 1
 slug: /software/iw-automationlab
+description: "iW-AutomationLab: software de simulação e análise MODBUS (RTU sobre RS485 e TCP/IP) para engenharia e comissionamento."
 ---
 
 # iW-AutomationLab
